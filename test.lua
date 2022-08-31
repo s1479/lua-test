@@ -1527,7 +1527,7 @@ GuiLibrary["SelfDestruct"] = function()
 end
 
 GeneralSettings.CreateButton2({
-	["Name"] = "RESET CURRENT PROFILE", 
+	["Name"] = "RESET CURRENT MAX", 
 	["Function"] = function()
 		local vapeprivate = shared.VapePrivate
 		local id = (shared.CustomSaveVape or game.PlaceId)
