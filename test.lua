@@ -1527,7 +1527,7 @@ GuiLibrary["SelfDestruct"] = function()
 end
 
 GeneralSettings.CreateButton2({
-	["Name"] = "RESET CURRENT PROFILE1", 
+	["Name"] = "RESET CURRENT PROFILE", 
 	["Function"] = function()
 		local vapeprivate = shared.VapePrivate
 		local id = (shared.CustomSaveVape or game.PlaceId)
@@ -1535,7 +1535,7 @@ GeneralSettings.CreateButton2({
 		delfile(customdir.."Profiles/"..(GuiLibrary["CurrentProfile"] == "default" and "" or GuiLibrary["CurrentProfile"])..id..".vapeprofile.txt")
 		shared.VapeSwitchServers = true
 		shared.VapeOpenGui = true
-		shared.VapePrivate = vapeprivate
+		shared.VapePrivate = true
 		loadstring(GetURL("NewMainScript.lua"))()
 	end
 })
